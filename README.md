@@ -18,7 +18,7 @@ You are responsible for:
 - All AWS service costs incurred through the use of this code
 
 
-
+## Process
 
 Create the Lambda function
 
@@ -38,7 +38,7 @@ Complete the following steps:
 
     Choose the Code tab, and then paste the following Python code
 
-[a relative link](lambda_function.py)
+[Python Code](lambda_function.py)
     
     Note: Find the source_bucket name from the event object that the Lambda function receives. You can store the destination_bucket name as an environment variable.
 
@@ -63,7 +63,7 @@ Provide IAM permissions for the Lambda function's execution role
 
 To copy files to the destination S3 bucket, add AWS Identity and Access Management (IAM) permissions for the Lambda function's execution role. Use a policy similar to the following resource-based policy:
 
-
+[Policy JSON](lambda_policy.json)
 
 Note:
 
