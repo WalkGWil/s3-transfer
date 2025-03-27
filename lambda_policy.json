@@ -1,0 +1,35 @@
+{  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "putObject",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::destination-s3-bucket/*"
+      ]
+    },
+    {
+      "Sid": "getObject",
+      "Effect": "Allow",
+      "Action": [
+		"s3:GetObject",
+		"s3:DeleteObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::source-s3-bucket/*"
+      ]
+    },
+    {
+      "Sid": "getObject",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::source-s3-bucket/archive/*"
+      ]
+    }
+  ]
+}
